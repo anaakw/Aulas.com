@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="icon" href="/assts/google-logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+         <!-- Popup para o Gmail -->
+         <a href="https://www.google.com/intl/pt_br/gmail/about/" class="popup-link">
+            Gmail
+            <span class="popup-text">Acesse sua conta de email</span>
+        </a>
+
+        <!-- Popup para Imagens -->
+        <a href="https://www.google.com/imghp?h1-pt-BR&authuser-0&ogb1" class="popup-link">
+            Imagens
+            <span class="popup-text">Pesquise imagens no Google</span>
+        </a>
+
+        <svg class="apps" focusable="false" viewBox="0 0 24 24">
+            <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+        </svg>
+ <!-- Popup para Fazer Login -->
+ <a class="botaolgn popup-link" href="https://accounts.google.com/ServiceLogin?hl=pt-PT&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">
+    Fazer Login
+    <span class="popup-text">Acesse sua conta do Google</span>
+</a>    </header>
+
+    <main>
+        <img class="glogo" src="https://www.google.com.br/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo do Google">
+        
+        <form action="https://www.google.com/search" method="get" class="barra-pesquisa">
+            <div class="search-container">
+                <input type="text" name="q" placeholder="Pesquisar..." required>
+                <div class="icons">
+                    <!-- Ícone do teclado com popup -->
+                    <img src="/assts/teclado.png" alt="Teclado" class="icon">
+                    <span class="popup">Teclado Virtual</span>
+        
+                    <!-- Ícone do som com popup -->
+                    <img src="/assts/som.png" alt="Som" class="icon">
+                    <span class="popup">Pesquisa por Voz</span>
+        
+                    <!-- Ícone da câmera com popup -->
+                    <img src="/assts/cam.jpg" alt="Câmera" class="icon">
+                    <span class="popup">Pesquisa por Imagem</span>
+                </div>
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                </button>
+            </div>
+        </form>
+
+        <div class="caixa-botoes">
+            <button class="botao">Pesquisa Google</button>
+            <button class="botao">Estou com sorte</button>
+        </div>
+        <div class="caixa-dispon">
+            <p>Disponibilizado pelo Google em: <a class="portuga" href="https://www.google.com">Português (Brasil)</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="caixa-rodape--borda"><p>Brasil</p></div>
+        <div class="caixa-rodape">
+            <div class="caixa-links">
+                <a href="https://about-google/?utm_source=google-BR&utm_medium=referral&utm_campaign=p-footer&fg=1">Sobre</a>
+                <a href="https://www.google.com.br/intl/pt-BR_br/ads/?subid=w-ww-et-g-awa-a-g_hpafoot1_1!2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidade</a>
+                <a href="https://www.google.com.br/services/?subid=um-wv-et-g-awa-a-g_hpbfoot1_1&fg=1&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter">Negócios</a>
+                <a href="https://google.com/search/howsearchworks/?fg=1">Como funciona a Pesquisa</a>
+            </div>
+            <div class="caixa-links">
+                <a href="https://policies.google.com/privacy?hl=pt-BR&fg=1">Privacidade</a>
+                <a href="https://policies.google.com/terms?hl=pt-BR&fg=1">Termos</a>
+                <p>Configurações</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

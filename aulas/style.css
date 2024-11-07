@@ -1,0 +1,305 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #202124;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+    padding: 6px 14px;
+}
+
+img {
+    height: 92px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000de;
+    font-size: 13px;
+}
+
+.apps {
+    width: 24px;
+    fill: rgb(233, 16, 52);
+}
+
+.botaolgn {
+    background-color: blue;
+    color: white;
+    padding: 10px 30px;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: aliceblue;
+}
+
+.caixa-rodape {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.caixa-rodape--borda {
+    border-bottom: 1px solid white;
+}
+
+.caixa-links {
+    display: flex;
+    gap: 30px;
+}
+
+.barra-pesquisa {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.search-container {
+    position: relative; /* Adiciona posição relativa */
+}
+
+.search-container input {
+    width: 400px;
+    padding: 10px 40px; /* Aumenta o padding à direita para o ícone */
+    border: 1px solid #dcdcdc;
+    border-radius: 24px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.search-container button {
+    position: absolute; /* Posiciona o botão dentro do container */
+    left: 10px; /* Ajusta a posição do ícone */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta o alinhamento */
+    background: transparent; /* Remove fundo do botão */
+    border: none; /* Remove borda do botão */
+    cursor: pointer;
+}
+
+.caixa-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.botao {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #e8e9ea;
+}
+
+.glogo {
+    display: block; /* Para que as margens funcionem */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-dispon {
+    margin-top: 20px; /* Ajuste o valor conforme necessário */
+}
+
+.portuga {
+    color: blue;
+}
+
+.icons {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    right: 10px; /* Posiciona os ícones à direita do campo de pesquisa */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icons .icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+.search-container {
+    position: relative;
+}
+/* Estilo da barra de pesquisa */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 10px 20px 10px 40px; /* Espaçamento à esquerda para a lupa */
+    border: 1px solid #dcdcdc;
+    border-radius: 24px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    outline: none;
+}
+
+/* Estilo do botão da lupa */
+.search-container button {
+    position: absolute;
+    left: 10px; /* Posiciona a lupa bem na ponta esquerda */
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Sombra na barra de pesquisa ao passar o mouse */
+.search-container input[type="text"]:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do ícone */
+.icon {
+    cursor: pointer;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+/* Popup para ícones */
+.popup {
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    background-color: #000000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+/* Mostra o popup ao passar o mouse */
+.icon:hover + .popup {
+    display: block;
+}
+
+/* Centraliza a barra de pesquisa e ajusta sua largura */
+form.barra-pesquisa {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 600px; /* Ajusta a largura para ser mais longa */
+    max-width: 90%; /* Para garantir responsividade */
+}
+
+.search-container input {
+    width: 100%;
+    padding: 10px 20px 10px 40px; /* Espaçamento à esquerda para a lupa */
+    border: 1px solid #dcdcdc;
+    border-radius: 24px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    outline: none;
+}
+
+/* Estilo do botão da lupa */
+.search-container button {
+    position: absolute;
+    left: 10px; /* Posiciona a lupa bem na ponta esquerda */
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Estilo para os links com popups */
+.popup-link {
+    position: relative;
+    color: #202124;
+    text-decoration: none;
+}
+
+.popup-link:hover {
+    color: #1a73e8;
+}
+
+/* Estilo para o texto do popup */
+.popup-text {
+    display: none;
+    position: absolute;
+    top: 100%; /* Exibe o popup abaixo do link */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 10;
+    margin-top: 5px; /* Adiciona um pequeno espaçamento entre o link e o popup */
+}
+
+/* Exibe o popup quando o link é hover */
+.popup-link:hover .popup-text {
+    display: block;
+}
